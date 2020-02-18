@@ -1,0 +1,36 @@
+<!--header area-->
+<div class="app__header">
+  <div class="app__header--menu">
+    <a href="javascript:void(0)" class="nav_action_button"><fa name="bars"></fa></a>
+  </div>
+  <div class="app__header--logo">
+    <div>
+      <fa name="sign-language"></fa> <span>Application Name</span>
+    </div>
+  </div>
+</div>
+<!--header end-->
+<!--Main content area-->
+<div class="app__main">
+<!--app navigation-->
+<div class="app__main--nav">
+  <nav>
+    <ul>
+      <li><a href="javascript:void(0)" [routerLink]="['home']" routerLinkActive="active">Home</a></li>
+      <li><a href="javascript:void(0)" [routerLink]="['pageone']" routerLinkActive="active">Page 1</a></li>
+      <li><a href="javascript:void(0)" [routerLink]="['pagetwo']" routerLinkActive="active">Page 2</a></li>
+    </ul>
+  </nav>
+</div>
+<!--app navigation-->
+<!--content area-->
+<div class="app__main--content">
+<router-outlet></router-outlet>
+<!--content area-->
+</div>
+
+</div>
+<!--Main content end-->
+<!--footer area-->
+<div class="app__footer"> Copyrights my-app 2020</div>
+<!--footer end-->
